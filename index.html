@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>36node - 满足您的各种需求</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="build/index.min.css" type="text/css" rel="stylesheet">
+
+  <script type="text/javascript" src="build/lib.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="section section-home" data-section-name="home">
+      <table class="table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <p class="wow bounceIn"><img src="images/logo.png"></p>
+            <h1 class="wow zoomIn" data-wow-delay=".5s">冒险者工会</h1>
+            <p class="wow zoomIn" data-wow-delay="1s">自由是勇敢者的游戏</p>
+          </td>
+        </tr>
+      </table>
+      <div class="bottom wow pulse" data-wow-delay="1.5s">Keep coding until the end of the world.</div>
+    </section>
+    <section class="section section-case" data-section-name="case">
+      <table class="table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <div class="inner">
+              <a href="http://note.youdao.com/noteshare?id=b9a9c7ed56c76b7e2ae886409debbd17" class="cs1 wow zoomIn"><span>四维图新</span></a>
+              <a href="#case" class="cs2 wow zoomIn"><span>中车</span></a>
+              <a href="http://note.youdao.com/noteshare?id=4f0307dbf47b70104d6117c96a4a1a88" class="cs3 wow zoomIn"><span>钰烯</span></a>
+              <a href="#case" class="cs4 wow zoomIn"><span>南愚</span></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="section section-product" data-section-name="product">
+      <table class="table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <h1 class="wow bounceInLeft">CHANGE THE WORLD</h1>
+            <p class="wow flipInX" data-wow-delay="0.5s" style="margin-bottom: 15px;">我们和客户一起创造有价值的产品</p>
+            <p class="wow flipInX" data-wow-delay="1s">我们为有价值的企业提供技术服务</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="section section-contact" data-section-name="contactus">
+      <table class="table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <h1 class="wow bounceInLeft">联系我们</h1>
+            <h3 class="inline wow fadeInUp" data-wow-delay="0.5s">
+              <span>商务合作</span>
+              <span>.</span>
+              <span>小伙伴加盟</span>
+              <span>.</span>
+              <span>意见想法</span>
+            </h3>
+            <div>
+              <p class="inline wow fadeInUp" data-wow-delay="1s">联系方式：zzswang@36node.com</p>
+            </div>
+            <div>
+              <p class="inline wow fadeInUp" data-wow-delay="1.5s">联系电话：186-0046-8092</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+  <div class="pagination">
+    <a href="#home" class="active"></a>
+    <a href="#case"></a>
+    <a href="#product"></a>
+    <a href="#contactus"></a>
+  </div>
+
+  <script type="text/javascript">
+    $(function() {
+      $.scrollify({
+        section: '.section',
+        sectionName: 'section-name',
+        interstitialSection: '',
+        easing: 'easeOutExpo',
+        scrollSpeed: 1100,
+        offset: 0,
+        scrollbars: false,
+        standardScrollElements: '',
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before: function(i, panels) {
+          var ref = panels[i].attr("data-section-name");
+          $('.pagination a.active').removeClass('active');
+          $('.pagination a[href=#' + ref + ']').addClass('active');
+        }
+      });
+
+      new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 5,
+        mobile: true,
+        live: true,
+      }).init();
+
+      $('.pagination a').click(function() {
+        $('.pagination a.active').removeClass('active');
+        $(this).addClass('active');
+        $.scrollify.move($(this).attr('href'));
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "36node.github.io",
+  "version": "1.0.0",
+  "description": "36node adventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/36node/36node.github.io.git"
+  },
+  "keywords": [
+    "36node"
+  ],
+  "author": "36node group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/36node/36node.github.io/issues"
+  },
+  "homepage": "https://github.com/36node/36node.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "clean-css": "^4.0.8",
+    "concat-with-sourcemaps": "^1.0.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^2.0.1",
+    "make-error-cause": "^1.2.2",
+    "uglify-js": "^2.8.8",
+    "uglify-save-license": "^0.4.1",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  }
+}

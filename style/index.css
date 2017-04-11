@@ -1,0 +1,220 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.section {
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-home {
+  position: relative;
+  background-image: url(../images/home_bg.jpeg);
+}
+
+.section-home img {
+  width: 200px;
+}
+
+.section-home p {
+  margin: 0;
+}
+
+.section-home h1 {
+  margin: -50px 0 1rem;
+}
+
+.section-home .bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.section-case {
+  background-color: #2e3e4e;
+}
+
+.section-case .table .inner {
+  display: inline-block;
+  width: 100vh;
+  height: 100vh;
+}
+
+.section-case .table .inner a {
+  position: relative;
+  float: left;
+  width: 50vh;
+  height: 50vh;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-case .table .inner a.cs1 {
+  background-size: contain;
+  background-color: #242524;
+  background-image: url("../images/swtx.png");
+}
+
+.section-case .table .inner a.cs2 {
+  background-color: rgb(61, 173, 208);
+  background-size: 55%;
+  background-image: url("../images/zhongche.png");
+}
+
+.section-case .table .inner a.cs3 {
+  background-color: #17dbbd;
+  background-size: 55%;
+  background-image: url("../images/yuxi.png");
+}
+
+.section-case .table .inner a.cs4 {
+  background-size: contain;
+  background-color: #242524;
+  background-image: url("../images/nanyu.png");
+}
+
+.section-case .table .inner a span {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(10, 10, 10, .88);
+}
+
+.section-product {
+  background-color: #00bff1;
+}
+
+.section-product .table p {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 725px) {
+  .section-case .table .inner {
+    display: inline-block;
+    width: 100vw;
+    height: 100vw;
+  }
+  .section-case .table .inner a {
+    position: relative;
+    float: left;
+    width: 50vw;
+    height: 50vw;
+    box-sizing: border-box;
+  }
+  .section-case .table .inner a.cs1 {
+    margin: 0;
+  }
+  .section-case .table .inner a.cs2 {
+    margin-bottom: 0;
+  }
+  .section-case .table .inner a.cs3 {
+    margin-right: 0;
+  }
+  .section-case .table .inner a.cs1 span {
+    left: auto;
+    top: auto;
+    right: 5px;
+    bottom: 5px;
+  }
+  .section-case .table .inner a.cs2 span {
+    right: auto;
+    top: auto;
+    left: 5px;
+    bottom: 5px;
+  }
+  .section-case .table .inner a.cs3 span {
+    left: auto;
+    bottom: auto;
+    top: 5px;
+    right: 5px;
+  }
+  .section-case .table .inner a.cs4 span {
+    right: auto;
+    bottom: auto;
+    top: 5px;
+    left: 5px;
+  }
+  .section-product .table p {
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.section.section-contact {
+  background-color: #536dfe;
+}
+
+.section.section-contact h1 {
+  margin: 0;
+}
+
+.section.section-contact h3 {
+  margin: 5px 0 30px;
+  font-weight: 300;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+}
+
+.table td {
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}
+
+.pagination {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  margin-top: -50px;
+  height: 70px;
+}
+
+.pagination a {
+  display: block;
+  margin-bottom: 10px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color .5s linear;
+  -webkit-transition: background-color .5s linear;
+}
+
+.pagination a:last-child {
+  margin-bottom: 0;
+}
+
+.pagination a.active {
+  background-color: white;
+}
