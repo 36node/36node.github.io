@@ -96,7 +96,7 @@ h1 {
   line-height: 30px;
   font-size: 12px;
   text-align: center;
-  background-color: rgba(10, 10, 10, .88);
+  background-color: rgba(10, 10, 10, 0.88);
 }
 
 .section-product {
@@ -207,8 +207,8 @@ h1 {
   border: 1px solid white;
   border-radius: 50%;
   background-color: transparent;
-  transition: background-color .5s linear;
-  -webkit-transition: background-color .5s linear;
+  transition: background-color 0.5s linear;
+  -webkit-transition: background-color 0.5s linear;
 }
 
 .pagination a:last-child {
@@ -217,4 +217,17 @@ h1 {
 
 .pagination a.active {
   background-color: white;
+}
+
+.record-a {
+  color: white;
+  text-decoration: none;
+}
+.record-p {
+  position: relative;
+  top: 96vh;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
 }
